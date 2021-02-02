@@ -5,18 +5,18 @@
 https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 
 
-```console
+```shell
 kubectl apply -f example-ingress.yaml example-ingress.yaml
 ```
 
 or
 
-```console
+```shell
 kubectl apply -f https://k8s.io/examples/service/networking/example-ingress.yaml
 ```
 ## DNS entries
 
-```console
+```shell
 # /etc/hosts
 
 192.168.39.82   hello-world.info
@@ -24,15 +24,15 @@ kubectl apply -f https://k8s.io/examples/service/networking/example-ingress.yaml
 10.111.216.221  dashboard.com
 ```
 
-```console
+```shell
 kubectl apply -f dashboard-ingress.yaml 
 ```
 
-```console
+```shell
 kubectl get ingress -n kubernetes-dashboard
 ```
 
-```console
+```shell
 kubectl describe ingress dashboard-ingress -n kubernetes-dashboard
 ```
 
